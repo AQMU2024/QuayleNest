@@ -34,9 +34,46 @@
 							<h1 class="major">Complex Potentials</h1>
 							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
 							<h2> The Motivation</h2>
-							<p>In the first semester of third year (2025), I took a class in fluid mechanics taught by Dr Paul Watts. Overall, it was one of the most engaging modules I've ever taken, but in particular I became interested in modelling special types of fluid flow in two dimensions using complex potentials.</p>
+							<p>In the first semester of third year (2025), I took a class in fluid mechanics taught by Dr. Paul Watts. Overall, it was one of the most engaging modules I've ever taken, but in particular I became interested in modelling special types of fluid flow in two dimensions using complex potentials.</p>
 							<p>By taking an analytical shortcut through complex analysis, much of the computationally taxing simulations often associated with fluid mechanics can be foregone in exchange for a hit to the realism of the fluids and a loss of one measly dimension (which is good for my poor little computer.)</p>
 							<p>After my exams that semester, I set off to find out how far I could push these complex potentials.</p>
+							<h2> Some Theory</h2>
+							<p>If we take a fluid and impose the restriction that it must be incompressible, then the mass continuity equation reduces to 
+							<math display="block" class="tml-display" style="display:block math;">
+							  <mrow>
+							    <mo>∇</mo>
+							    <mo form="prefix" stretchy="false">⋅</mo>
+							    <mover>
+							      <mi>u</mi>
+							      <mo stretchy="false" class="tml-vec chr-sml wbk-sml-vec">→</mo>
+							    </mover>
+							    <mo>=</mo>
+							    <mover>
+							      <mn>0</mn>
+							      <mo stretchy="false" class="tml-vec wbk-vec">→</mo>
+							    </mover>
+							  </mrow>
+							</math>
+							As the divergence of the curl of any vector field is equal to zero, we can define a vector potential 
+							<math display="block" class="tml-display" style="display:block math;">
+							 <mi>ψ</mi>
+							</math>
+							such that 
+							<math display="block" class="tml-display" style="display:block math;">
+							  <mrow>
+								<mover>
+								  <mi>u</mi>
+								  <mo stretchy="false" class="tml-vec chr-sml wbk-sml-vec">→</mo>
+								</mover>
+								<mo>=</mo>
+								<mo form="prefix" stretchy="false">∇</mo>
+								<mo form="prefix" stretchy="false">×</mo>
+								<mi>ψ</mi>
+							  </mrow>
+							</math>
+							.
+							</p>
+
 						</div>
 					</section>
 
@@ -63,6 +100,7 @@
 	</body>
 
 </html>
+
 
 
 
