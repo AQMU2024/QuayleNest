@@ -3872,7 +3872,7 @@ input, select, textarea {
 
 /* Intro */
 
-	.back-video{
+	#back-video{
 		position: absolute;
 		right: 0;
 		bottom: 0;
