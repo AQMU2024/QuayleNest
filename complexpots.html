@@ -716,50 +716,7 @@
 							</p>
 
 							<p>
-								Let's take the gradient of the streamline function, this may seem unmotivated now, but it'll soon pay off.
-								<math display="block" class="tml-display" style="display:block math;">
-								  <mrow>
-								    <mo>∇</mo>
-								    <mi>ψ</mi>
-								    <mo>=</mo>
-								    <mfrac>
-								      <mrow>
-								        <mi>∂</mi>
-								        <mi>ψ</mi>
-								      </mrow>
-								      <mrow>
-								        <mi>∂</mi>
-								        <mi>x</mi>
-								      </mrow>
-								    </mfrac>
-								    <msub>
-								      <mover>
-								        <mi>e</mi>
-								        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
-								      </mover>
-								      <mi>x</mi>
-								    </msub>
-								    <mo>+</mo>
-								    <mfrac>
-								      <mrow>
-								        <mi>∂</mi>
-								        <mi>ψ</mi>
-								      </mrow>
-								      <mrow>
-								        <mi>∂</mi>
-								        <mi>y</mi>
-								      </mrow>
-								    </mfrac>
-								    <msub>
-								      <mover>
-								        <mi>e</mi>
-								        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
-								      </mover>
-								      <mi>y</mi>
-								    </msub>
-								  </mrow>
-								</math>
-								Also recall that we can write the velocity field as partial derivatives of the stream function:
+								Recall that we can write the velocity field as partial derivatives of the stream function:
 								<math display="block" class="tml-display" style="display:block math;">
 								  <mrow>
 								    <mover>
@@ -804,11 +761,80 @@
 								    </msub>
 								  </mrow>
 								</math>
-							</p>
-
+								This means that we can write the gradient of the stream function in terms of the components of the velocity
+							<math display="block" class="tml-display" style="display:block math;">
+							  <mrow>
+							    <mo>∇</mo>
+							    <mi>ψ</mi>
+							    <mo>=</mo>
+							    <mfrac>
+							      <mrow>
+							        <mi>∂</mi>
+							        <mi>ψ</mi>
+							      </mrow>
+							      <mrow>
+							        <mi>∂</mi>
+							        <mi>y</mi>
+							      </mrow>
+							    </mfrac>
+							    <msub>
+							      <mover>
+							        <mi>e</mi>
+							        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+							      </mover>
+							      <mi>x</mi>
+							    </msub>
+							    <mo>−</mo>
+							    <mfrac>
+							      <mrow>
+							        <mi>∂</mi>
+							        <mi>ψ</mi>
+							      </mrow>
+							      <mrow>
+							        <mi>∂</mi>
+							        <mi>x</mi>
+							      </mrow>
+							    </mfrac>
+							    <msub>
+							      <mover>
+							        <mi>e</mi>
+							        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+							      </mover>
+							      <mi>y</mi>
+							    </msub>
+							    <mo>=</mo>
+							    <mo form="prefix" stretchy="false">−</mo>
+							    <msub>
+							      <mi>u</mi>
+							      <mi>y</mi>
+							    </msub>
+							    <msub>
+							      <mover>
+							        <mi>e</mi>
+							        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+							      </mover>
+							      <mi>x</mi>
+							    </msub>
+							    <mo>+</mo>
+							    <msub>
+							      <mi>u</mi>
+							      <mi>x</mi>
+							    </msub>
+							    <msub>
+							      <mover>
+							        <mi>e</mi>
+							        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+							      </mover>
+							      <mi>y</mi>
+							    </msub>
+							  </mrow>
+							</math>
 							<p>
 								Let's now take the inner product between the velocity field and the gradient of the stream function.
 							</p>
+							</p>
+							
+							
 						</div>
 					</section>
 
@@ -835,6 +861,7 @@
 	</body>
 
 </html>
+
 
 
 
