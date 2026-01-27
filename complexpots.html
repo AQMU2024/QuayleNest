@@ -20,6 +20,7 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="complexpots.html" class="active">Complex Potentials</a></li>
+						<li><a href="elements.html">Elements</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -31,7 +32,7 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Complex Potentials</h1>
-							<span class="image fit"><img src="images/fluid_mech_1.jpg" alt="" /></span>
+							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
 							<h2> The Motivation</h2>
 							<p>In the first semester of third year (2025), I took a class in fluid mechanics taught by Dr. Paul Watts. Overall, it was one of the most engaging modules I've ever taken, but in particular I became interested in modelling special types of fluid flow in two dimensions using complex potentials.</p>
 							<p>By taking an analytical shortcut through complex analysis, much of the computationally taxing simulations often associated with fluid mechanics can be foregone in exchange for a hit to the realism of the fluids and a loss of one measly dimension (which is good for my poor little computer.)</p>
@@ -712,7 +713,102 @@
 							</p>
 							<p>
 								Streamlines are lines which are always parallel to the velocity field, giving the impression that they're smoothly connecting the field together. In fact, as long as the 
-								fluid is flowing steadily, a particle in the fluid will follow a given streamline along its journey.
+								fluid is flowing steadily, a particle in the fluid will follow a given streamline along its journey. 
+							</p>
+
+							<p>
+								Let's take the gradient of the streamline function, this may seem unmotivated now, but it'll soon pay off.
+								<math display="block" class="tml-display" style="display:block math;">
+								  <mrow>
+								    <mo>∇</mo>
+								    <mi>ψ</mi>
+								    <mo>=</mo>
+								    <mfrac>
+								      <mrow>
+								        <mi>∂</mi>
+								        <mi>ψ</mi>
+								      </mrow>
+								      <mrow>
+								        <mi>∂</mi>
+								        <mi>x</mi>
+								      </mrow>
+								    </mfrac>
+								    <msub>
+								      <mover>
+								        <mi>e</mi>
+								        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								      </mover>
+								      <mi>x</mi>
+								    </msub>
+								    <mo>+</mo>
+								    <mfrac>
+								      <mrow>
+								        <mi>∂</mi>
+								        <mi>ψ</mi>
+								      </mrow>
+								      <mrow>
+								        <mi>∂</mi>
+								        <mi>y</mi>
+								      </mrow>
+								    </mfrac>
+								    <msub>
+								      <mover>
+								        <mi>e</mi>
+								        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								      </mover>
+								      <mi>y</mi>
+								    </msub>
+								  </mrow>
+								</math>
+								Also recall that we can write the velocity field as partial derivatives of the stream function:
+								<math display="block" class="tml-display" style="display:block math;">
+								  <mrow>
+								    <mover>
+								      <mi>u</mi>
+								      <mo stretchy="false" class="tml-vec chr-sml wbk-sml-vec">→</mo>
+								    </mover>
+								    <mo>=</mo>
+								    <mfrac>
+								      <mrow>
+								        <mi>∂</mi>
+								        <mi>ψ</mi>
+								      </mrow>
+								      <mrow>
+								        <mi>∂</mi>
+								        <mi>y</mi>
+								      </mrow>
+								    </mfrac>
+								    <msub>
+								      <mover>
+								        <mi>e</mi>
+								        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								      </mover>
+								      <mi>x</mi>
+								    </msub>
+								    <mo>−</mo>
+								    <mfrac>
+								      <mrow>
+								        <mi>∂</mi>
+								        <mi>ψ</mi>
+								      </mrow>
+								      <mrow>
+								        <mi>∂</mi>
+								        <mi>x</mi>
+								      </mrow>
+								    </mfrac>
+								    <msub>
+								      <mover>
+								        <mi>e</mi>
+								        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								      </mover>
+								      <mi>y</mi>
+								    </msub>
+								  </mrow>
+								</math>
+							</p>
+
+							<p>
+								Let's now take the inner product between the velocity field and the gradient of the stream function.
 							</p>
 						</div>
 					</section>
@@ -740,6 +836,18 @@
 	</body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
