@@ -112,7 +112,7 @@
 							    </mover>
 							  </mrow>
 							</math>
-							. This scalar potential is usually valled the "velocity potential".
+							. This scalar potential is usually called the <b>velocity potential</b>.
 							</p>
 
 							<p>
@@ -420,6 +420,157 @@
 								    </msub>
 								  </mrow>
 								</math>
+								However, the fluid is only able to flow in the xy-plane, so 
+								<math>
+								  <mrow>
+								    <msub>
+								      <mi>u</mi>
+								      <mi>x</mi>
+								    </msub>
+								    <mo>=</mo>
+								    <mn>0</mn>
+								  </mrow>
+								</math>
+								 and all derivatives with respect to <math><mi>z</mi></math> equal zero as well, as the velocity of the fluid can't change in that direciton. So, the curl of the vector potential reduces to
+								<math display="block" class="tml-display" style="display:block math;">
+								  <mtable displaystyle="true" class="tml-jot">
+								    <mtr>
+								      <mtd style="padding-left:0em;padding-right:0em;">
+								        <mrow>
+								          <msub>
+								            <mi>u</mi>
+								            <mi>x</mi>
+								          </msub>
+								          <msub>
+								            <mover>
+								              <mi>e</mi>
+								              <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								            </mover>
+								            <mi>x</mi>
+								          </msub>
+								          <mo>+</mo>
+								          <msub>
+								            <mi>u</mi>
+								            <mi>y</mi>
+								          </msub>
+								          <msub>
+								            <mover>
+								              <mi>e</mi>
+								              <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								            </mover>
+								            <mi>y</mi>
+								          </msub>
+								          <mo>=</mo>
+								          <mfrac>
+								            <mrow>
+								              <mi>∂</mi>
+								              <msub>
+								                <mi>ψ</mi>
+								                <mi>z</mi>
+								              </msub>
+								            </mrow>
+								            <mrow>
+								              <mi>∂</mi>
+								              <mi>y</mi>
+								            </mrow>
+								          </mfrac>
+								          <msub>
+								            <mover>
+								              <mi>e</mi>
+								              <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								            </mover>
+								            <mi>x</mi>
+								          </msub>
+								          <mo>−</mo>
+								          <mfrac>
+								            <mrow>
+								              <mi>∂</mi>
+								              <msub>
+								                <mi>ψ</mi>
+								                <mi>z</mi>
+								              </msub>
+								            </mrow>
+								            <mrow>
+								              <mi>∂</mi>
+								              <mi>x</mi>
+								            </mrow>
+								          </mfrac>
+								          <msub>
+								            <mover>
+								              <mi>e</mi>
+								              <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								            </mover>
+								            <mi>y</mi>
+								          </msub>
+								        </mrow>
+								      </mtd>
+								    </mtr>
+								    <mtr>
+								      <mtd style="padding-left:0em;padding-right:0em;">
+								        <mrow>
+								          <mo>∴</mo>
+								          <mspace width="0.2778em"></mspace>
+								          <msub>
+								            <mi>u</mi>
+								            <mi>x</mi>
+								          </msub>
+								          <mo>=</mo>
+								          <mfrac>
+								            <mrow>
+								              <mi>∂</mi>
+								              <mi>ψ</mi>
+								            </mrow>
+								            <mrow>
+								              <mi>∂</mi>
+								              <mi>y</mi>
+								            </mrow>
+								          </mfrac>
+								          <mspace width="0.2778em"></mspace>
+								          <mo separator="true">,</mo>
+								          <mspace width="0.2778em"></mspace>
+								          <msub>
+								            <mi>u</mi>
+								            <mi>y</mi>
+								          </msub>
+								          <mo>=</mo>
+								          <mo form="prefix" stretchy="false">−</mo>
+								          <mfrac>
+								            <mrow>
+								              <mi>∂</mi>
+								              <msub>
+								                <mi>ψ</mi>
+								                <mi>z</mi>
+								              </msub>
+								            </mrow>
+								            <mrow>
+								              <mi>∂</mi>
+								              <mi>x</mi>
+								            </mrow>
+								          </mfrac>
+								        </mrow>
+								      </mtd>
+								    </mtr>
+								  </mtable>
+								</math>
+								Note that the vector potential now <i>only</i> has a <math><mi>z</mi></math>-component. This means we can simplify the notation a bit, as the <math><mi>z</mi></math>-component of the vector potential is <i>is</i> the magnitude of 
+								<math>
+								  <mover>
+								    <mi>ψ</mi>
+								    <mo stretchy="false">→</mo>
+								  </mover>
+								</math>
+								, we can simply let
+								<math>
+								  <mrow>
+								    <msub>
+								      <mi>ψ</mi>
+								      <mi>z</mi>
+								    </msub>
+								    <mo>=</mo>
+								    <mi>ψ</mi>
+								  </mrow>
+								</math>
+								. The scalar function <math><mi>ψ</mi></math> is usually called the <b>stream function</b> of the fluid.
 							</p>
 							
 						</div>
@@ -448,6 +599,7 @@
 	</body>
 
 </html>
+
 
 
 
