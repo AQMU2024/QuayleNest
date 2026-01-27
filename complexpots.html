@@ -112,7 +112,7 @@
 							    </mover>
 							  </mrow>
 							</math>
-							.
+							. This scalar potential is usually valled the "velocity potential".
 							</p>
 
 							<p>
@@ -150,7 +150,278 @@
 								  </mrow>
 								</math>
 								). Okay, no more restrictions for now! Everything has fallen into place and we're ready to make a really cool connection.
-
+							</p>
+							<p>
+								Let's write down the velocity field component-wise using these potentials. The velocity potential is easy:
+								<math display="block" class="tml-display" style="display:block math;">
+								  <mtable displaystyle="true" class="tml-jot">
+								    <mtr>
+								      <mtd style="padding-left:0em;padding-right:0em;">
+								        <mrow>
+								          <msub>
+								            <mi>u</mi>
+								            <mi>x</mi>
+								          </msub>
+								          <msub>
+								            <mover>
+								              <mi>e</mi>
+								              <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								            </mover>
+								            <mi>x</mi>
+								          </msub>
+								          <mo>+</mo>
+								          <msub>
+								            <mi>u</mi>
+								            <mi>y</mi>
+								          </msub>
+								          <msub>
+								            <mover>
+								              <mi>e</mi>
+								              <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								            </mover>
+								            <mi>y</mi>
+								          </msub>
+								          <mo>=</mo>
+								          <mfrac>
+								            <mrow>
+								              <mi>∂</mi>
+								              <mi>φ</mi>
+								            </mrow>
+								            <mrow>
+								              <mi>∂</mi>
+								              <mi>x</mi>
+								            </mrow>
+								          </mfrac>
+								          <msub>
+								            <mover>
+								              <mi>e</mi>
+								              <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								            </mover>
+								            <mi>x</mi>
+								          </msub>
+								          <mo>+</mo>
+								          <mfrac>
+								            <mrow>
+								              <mi>∂</mi>
+								              <mi>φ</mi>
+								            </mrow>
+								            <mrow>
+								              <mi>∂</mi>
+								              <mi>y</mi>
+								            </mrow>
+								          </mfrac>
+								          <msub>
+								            <mover>
+								              <mi>e</mi>
+								              <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								            </mover>
+								            <mi>y</mi>
+								          </msub>
+								        </mrow>
+								      </mtd>
+								    </mtr>
+								    <mtr>
+								      <mtd style="padding-left:0em;padding-right:0em;">
+								        <mrow>
+								          <mo>∴</mo>
+								          <mspace width="0.2778em"></mspace>
+								          <msub>
+								            <mi>u</mi>
+								            <mi>x</mi>
+								          </msub>
+								          <mo>=</mo>
+								          <mfrac>
+								            <mrow>
+								              <mi>∂</mi>
+								              <mi>φ</mi>
+								            </mrow>
+								            <mrow>
+								              <mi>∂</mi>
+								              <mi>x</mi>
+								            </mrow>
+								          </mfrac>
+								          <mspace width="0.2778em"></mspace>
+								          <mo separator="true">,</mo>
+								          <mspace width="0.2778em"></mspace>
+								          <msub>
+								            <mi>u</mi>
+								            <mi>y</mi>
+								          </msub>
+								          <mo>=</mo>
+								          <mfrac>
+								            <mrow>
+								              <mi>∂</mi>
+								              <mi>φ</mi>
+								            </mrow>
+								            <mrow>
+								              <mi>∂</mi>
+								              <mi>y</mi>
+								            </mrow>
+								          </mfrac>
+								        </mrow>
+								      </mtd>
+								    </mtr>
+								  </mtable>
+								</math>
+								Let's do the same for the vector potential:
+								<math display="block" class="tml-display" style="display:block math;">
+								  <mrow>
+								    <msub>
+								      <mi>u</mi>
+								      <mi>x</mi>
+								    </msub>
+								    <msub>
+								      <mover>
+								        <mi>e</mi>
+								        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								      </mover>
+								      <mi>x</mi>
+								    </msub>
+								    <mo>+</mo>
+								    <msub>
+								      <mi>u</mi>
+								      <mi>y</mi>
+								    </msub>
+								    <msub>
+								      <mover>
+								        <mi>e</mi>
+								        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								      </mover>
+								      <mi>y</mi>
+								    </msub>
+								    <mo>+</mo>
+								    <msub>
+								      <mi>u</mi>
+								      <mi>z</mi>
+								    </msub>
+								    <msub>
+								      <mover>
+								        <mi>e</mi>
+								        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								      </mover>
+								      <mi>z</mi>
+								    </msub>
+								    <mo>=</mo>
+								    <mrow>
+								      <mo fence="true" form="prefix">(</mo>
+								      <mfrac>
+								        <mrow>
+								          <mi>∂</mi>
+								          <msub>
+								            <mi>ψ</mi>
+								            <mi>z</mi>
+								          </msub>
+								        </mrow>
+								        <mrow>
+								          <mi>∂</mi>
+								          <mi>y</mi>
+								        </mrow>
+								      </mfrac>
+								      <mo>−</mo>
+								      <mfrac>
+								        <mrow>
+								          <mi>∂</mi>
+								          <msub>
+								            <mi>ψ</mi>
+								            <mi>y</mi>
+								          </msub>
+								        </mrow>
+								        <mrow>
+								          <mi>∂</mi>
+								          <mi>z</mi>
+								        </mrow>
+								      </mfrac>
+								      <mo fence="true" form="postfix">)</mo>
+								    </mrow>
+								    <msub>
+								      <mover>
+								        <mi>e</mi>
+								        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								      </mover>
+								      <mi>x</mi>
+								    </msub>
+								    <mo>+</mo>
+								    <mrow>
+								      <mo fence="true" form="prefix">(</mo>
+								      <mfrac>
+								        <mrow>
+								          <mi>∂</mi>
+								          <msub>
+								            <mi>ψ</mi>
+								            <mi>x</mi>
+								          </msub>
+								        </mrow>
+								        <mrow>
+								          <mi>∂</mi>
+								          <mi>z</mi>
+								        </mrow>
+								      </mfrac>
+								      <mo>−</mo>
+								      <mfrac>
+								        <mrow>
+								          <mi>∂</mi>
+								          <msub>
+								            <mi>ψ</mi>
+								            <mi>z</mi>
+								          </msub>
+								        </mrow>
+								        <mrow>
+								          <mi>∂</mi>
+								          <mi>x</mi>
+								        </mrow>
+								      </mfrac>
+								      <mo fence="true" form="postfix">)</mo>
+								    </mrow>
+								    <msub>
+								      <mover>
+								        <mi>e</mi>
+								        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								      </mover>
+								      <mi>y</mi>
+								    </msub>
+								    <mo>+</mo>
+								    <mrow>
+								      <mo fence="true" form="prefix">(</mo>
+								      <mfrac>
+								        <mrow>
+								          <mi>∂</mi>
+								          <msub>
+								            <mi>ψ</mi>
+								            <mi>y</mi>
+								          </msub>
+								        </mrow>
+								        <mrow>
+								          <mi>∂</mi>
+								          <mi>x</mi>
+								        </mrow>
+								      </mfrac>
+								      <mo>−</mo>
+								      <mfrac>
+								        <mrow>
+								          <mi>∂</mi>
+								          <msub>
+								            <mi>ψ</mi>
+								            <mi>x</mi>
+								          </msub>
+								        </mrow>
+								        <mrow>
+								          <mi>∂</mi>
+								          <mi>y</mi>
+								        </mrow>
+								      </mfrac>
+								      <mo fence="true" form="postfix">)</mo>
+								    </mrow>
+								    <msub>
+								      <mover>
+								        <mi>e</mi>
+								        <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">^</mo>
+								      </mover>
+								      <mi>z</mi>
+								    </msub>
+								  </mrow>
+								</math>
+							</p>
+							
 						</div>
 					</section>
 
@@ -177,6 +448,7 @@
 	</body>
 
 </html>
+
 
 
 
