@@ -873,7 +873,34 @@
 								(from a computational point of view) to do by hand. In general, we can use a computer to solve for these curves (which is one of the aims of this project.)
 							</p>
 
-							<h2>Extracting Information from Complex Potentials</h2>
+							<h3>Extracting Information from Complex Potentials</h3>
+							<p>
+								Now that we have a connection between velocity fields, stream functions and complex potentials, we can start exploring by reversing our thinking. Rather than creating complex potentials from the way fluid flows, we can instead discern the way fluid flows from 
+								some complex potential. The exciting thing is that as long as this function is in terms of 
+							<math>
+							  <mrow>
+							    <mi>z</mi>
+							    <mo>=</mo>
+							    <mi>x</mi>
+							    <mo>+</mo>
+							    <mi>i</mi>
+							    <mi>y</mi>
+							  </mrow>
+							</math>
+							 alone, there will always be a corresponding flow. So, we can think of any arbitrary function 
+							<math>
+							  <mrow>
+							    <mi>W</mi>
+							    <mo form="prefix" stretchy="false">(</mo>
+							    <mi>z</mi>
+							    <mo form="postfix" stretchy="false">)</mo>
+							  </mrow>
+							</math>
+								and find the flow associated with it. Sometimes this will be a simple enough association to do the work manually, but here we'll create a program which takes a complex potential as input and gives visualisations of the flow as output.
+							</p>
+
+							<h2>Doing the Thing</h2>
+							
 							
 							
 							
@@ -903,6 +930,7 @@
 	</body>
 
 </html>
+
 
 
 
