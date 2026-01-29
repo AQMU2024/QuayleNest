@@ -951,8 +951,15 @@
 							    <mo form="postfix" stretchy="false">)</mo>
 							  </mrow>
 							</math>
-								 is the stream function, whose level curves describe the streamlines. In theory, both of these components are required to described the flow, the stream function describes the path along which fluid 
+								 is the stream function, whose level curves describe the streamlines. In theory, both of these components are required to describe the flow, the stream function describes the path along which fluid 
 								moves, and the velocity potential descibes the direction of flow along that path.
+							</p>
+
+							<p>
+							Computationally, these two components are very easy to deal with. We can simply define some complex variable for the complex potential, then extract the real and imaginary components. NumPy has an intuitive 
+							function, <code>numpy.gradient()</code>, which returns the descrete gradient field of an inputted array (our velocity potential field). To plot the level curves of the stream function, we can simply use a contour
+							plot, which does just that. In this case, I used <code>matplotlib.pyplot.contour()</code>.
+						
 							</p>
 							
 							
@@ -984,6 +991,7 @@
 	</body>
 
 </html>
+
 
 
 
