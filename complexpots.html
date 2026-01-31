@@ -957,8 +957,8 @@
 
 							<p>
 							Computationally, these two components are very easy to deal with. We can simply define some complex variable for the complex potential, then extract the real and imaginary components. NumPy has an intuitive 
-							function, <code>numpy.gradient()</code>, which returns the descrete gradient field of an inputted array (our velocity potential field). To plot the level curves of the stream function, we can simply use a contour
-							plot, which does just that. In this case, I used <code>matplotlib.pyplot.contour()</code>. As an example, below are plots of the real and imaginary components of the complex potential, where  
+							function,<code>numpy.gradient()</code>, which returns the descrete gradient field of an inputted array (our velocity potential field). To plot the level curves of the stream function, we can simply use a contour
+							plot, which does just that. In this case, I used<code>matplotlib.pyplot.contour()</code>. As an example, below are plots of the real and imaginary components of the complex potential, where  
 							<math>
 							  <mrow>
 								<mi>W</mi>
@@ -986,6 +986,8 @@
 							</p>
 
 							<h2>Visualising Flow</h2>
+							In a sad turn of events for the streamfunction, it turns out that only the velocity potential is required computationally to fully visualise the flow of the system. PyPlot's in-built<code>streamplot()</code> function can create visualisations of streamlines if given the velocity field alone. This tuned out to be the easiest and most attractive
+							way to merge the path and direction information. Using this function, we can even use a colour-map to colour the plot based on some parameter (the obvious one here being the speed of the fluid.)
 							
 							
 							
@@ -1017,6 +1019,7 @@
 	</body>
 
 </html>
+
 
 
 
