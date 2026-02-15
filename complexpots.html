@@ -995,6 +995,24 @@
 								Here, the speed is given relative to the maximum speed in the field. 
 							</p>
 
+							<p>
+								For these above reciprocal potentials, there is an isolated singularity at 
+								<math>
+								  <mrow>
+								    <mi>z</mi>
+								    <mo>=</mo>
+								    <mn>0</mn>
+								  </mrow>
+								</math>
+								 which Python would obviously complain about. At first, I ignored the problem by simply not including the origin in the meshgrid. This works alright for the functions detailed above, but for other functions, singularities might not be at the origin. That's assuming we can even pre-program in where the singularities are, for more complicated expressions, 
+								it could be very tough to to find them, we should really have a fail safe in case the program does encounter a singularity. This led to the other solution, a try-except clause during the calculation of the potential which catches the Numpy <code>FloatingPointError</code> which is thrown when dividing by zero. This error is a bit tricky to catch, as Python
+								will return <code>NaN</code> rather than throwing an error (which will later cause the gradient function to sample outside its domain and throw its own error), so <code>np.seterr(all="raise")</code> was used to force the program to raise a catchable error.		
+							</p>
+
+							<p>
+								Finding the singularities as they come up turns out to actually be the nicest part of this problem, as now we have to decide how we're actually going to deal with them.
+							</p>
+
 							
 							
 							
@@ -1024,6 +1042,7 @@
 	</body>
 
 </html>
+
 
 
 
