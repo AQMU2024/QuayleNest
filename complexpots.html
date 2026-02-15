@@ -17,7 +17,7 @@
 			code {
 			  font-family: Consolas,"courier new";
 			  color: lime;
-			  background-color: #404040;
+			  background-color: #666666;
 			  padding: 2px;
 			}
 		</style>
@@ -1018,7 +1018,10 @@
 							</p>
 
 							<p>
-								Finding the singularities as they come up turns out to actually be the nicest part of this problem, as now we have to decide how we're actually going to deal with them.
+								Finding the singularities as they come up turns out to actually be the nicest part of this problem, as now we have to decide how we're actually going to deal with them. At first, the solution was to let the potential take on the maximum value found anwhere else in the function. One issue with this method is that it tends to be inaccurate if the singularity is
+								found early-on in the indexing, as it's possible that a larger value is still yet to be found. Another issue is that, with smooth potentials, the largest value tends to be only one step away from the singularity, and so the gradient suddenly becomes zero at the singularity, where ideally the magnitude of the gradient should rise monatonically towards it. Ultimately, 
+								however, it was found that it actually doens't matter all that much. If the resolution of the meshgrid is high enough, then one outlying value won't rock the boat all that much — Pyplot's <code>contour()</code> and <code>streamline()</code> functions are sophisticated enough to recognise and resolve these points. The area around a singularity tends to be quite extreme 
+								when compared to regions further away anyway, and so it was found that setting the function to a constant (I chose zero) at every singularity makes no difference to the visualisation as long as the resolution of the meshgrid is big enough. 
 							</p>
 
 							
@@ -1050,6 +1053,7 @@
 	</body>
 
 </html>
+
 
 
 
