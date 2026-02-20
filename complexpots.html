@@ -1020,9 +1020,25 @@
 							<p>
 								Finding the singularities as they come up turns out to actually be the nicest part of this problem, as now we have to decide how we're actually going to deal with them. At first, the solution was to let the potential take on the maximum value found anwhere else in the function. One issue with this method is that it tends to be inaccurate if the singularity is
 								found early-on in the indexing, as it's possible that a larger value is still yet to be found. Another issue is that, with smooth potentials, the largest value tends to be only one step away from the singularity, and so the gradient suddenly becomes zero at the singularity, where ideally the magnitude of the gradient should rise monatonically towards it. Ultimately, 
-								however, it was found that it actually doens't matter all that much. If the resolution of the meshgrid is high enough, then one outlying value won't rock the boat all that much — Pyplot's <code>contour()</code> and <code>streamline()</code> functions are sophisticated enough to recognise and resolve these points. The area around a singularity tends to be quite extreme 
-								when compared to regions further away anyway, and so it was found that setting the function to a constant (I chose zero) at every singularity makes no difference to the visualisation as long as the resolution of the meshgrid is big enough. 
+								however, it was found that it actually doesn't matter all that much. If the resolution of the meshgrid is high enough, then one outlying value won't rock the boat all that much — Pyplot's <code>contour()</code> and <code>streamline()</code> functions are sophisticated enough to recognise and resolve these points. The area around a singularity tends to be quite extreme 
+								when compared to regions further away anyway, and so it was found that setting the function to a constant (I chose zero) at every singularity makes no difference to the visualisation as long as the meshgrid is dense enough. 
 							</p>
+
+							<p>
+								These 
+								<math>
+								  <mrow>
+								    <mn>1</mn>
+								    <mi>/</mi>
+								    <msup>
+								      <mi>z</mi>
+								      <mi class="tml-sml-pad">n</mi>
+								    </msup>
+								  </mrow>
+								</math>
+								potentials are particularly pleasant to me, but theres a swathe of other interesting and pretty flows out there for us to admire. Before we depart from our reciprocal friends, however, we can take a look at how their flow changes as we sweep through values of <math><mi>n</mi></math> (even the never-before seen non-integer values!)
+							</p>
+							<span class="image fit"><img src="images/Compots-2.png" alt="" /></span>
 
 							
 							
@@ -1053,6 +1069,7 @@
 	</body>
 
 </html>
+
 
 
 
