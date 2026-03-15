@@ -21,7 +21,20 @@
 			  background-color: #404040;
 			  padding: 3px;
 			}
-		</style>
+			
+	.column {
+	  float: left;
+	  width: 503%;
+	  padding: 5px;
+	}
+	
+	/* Clearfix (clear floats) */
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+</style>
 
 		<!-- Header -->
 			<header id="header">
