@@ -1067,7 +1067,37 @@
 								    </msup>
 								  </mrow>
 								</math>
-								wont change the flow at all. This is why the flow corresponding to this complex potential has a velocity of zero everywhere.
+								wont change the flow at all. This is why the flow corresponding to this complex potential has a velocity of zero everywhere. Just for fun, let's try to approximate an analytic function with these 16 basis potentials. To do this somewhat accurately, we'll need a function which has large low-order components so that we can 
+								encapsulate most of the behaviour of the function in only the lowest 16 basis functions. The function 
+								<math>
+								  <mrow>
+								    <msup>
+								      <mi>e</mi>
+								      <mi class="tml-sml-pad">z</mi>
+								    </msup>
+								    <mo>=</mo>
+								    <msubsup>
+								      <mo movablelimits="false">∑</mo>
+								      <mrow>
+								        <mi>n</mi>
+								        <mo>=</mo>
+								        <mn>0</mn>
+								      </mrow>
+								      <mi>∞</mi>
+								    </msubsup>
+								    <mfrac>
+								      <msup>
+								        <mi>z</mi>
+								        <mi class="tml-sml-pad">n</mi>
+								      </msup>
+								      <mrow>
+								        <mi>n</mi>
+								        <mo form="postfix" stretchy="false" lspace="0em" rspace="0em">!</mo>
+								      </mrow>
+								    </mfrac>
+								  </mrow>
+								</math>
+								is perfect for this purpose. Not only are the exponential function and its Taylor expansion nice because they are very well-known, the factorial in the denominator of the expansion ensures that the series converges very quickly and allows us to approximate the function well with only a few low-order basis functions.
 							</p>
 
 							
